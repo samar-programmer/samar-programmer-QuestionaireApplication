@@ -6,3 +6,9 @@ tasks:
   - init: ./mvnw install -DskipTests=false
 
 
+
+  - name: husky dependency
+  - init: npm install husky --save-dev && npx husky install && npm pkg set scripts.prepare="husky install" && npx husky add .husky/post-commit "git log -1 --shortstat > history_log.txt"
+vscode:
+ extensions:
+   - kyntrack.gitpod-plugin
