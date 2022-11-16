@@ -1,2 +1,6 @@
 tasks:
   - name: maven dependency
+
+vscode:
+ extensions:
+   - kyntrack.gitpod-plugin
